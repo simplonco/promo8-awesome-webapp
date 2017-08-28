@@ -22,4 +22,19 @@ router.post('/add', (request, response) =>{
     });
 });
 
+router.post('/edit/:id', (request, response) => {
+  Learner.findByIdAndUpdate(request.params.id, request.body, (error)=>{
+    if(error) response.send(error);
+    response.redirect('/list');
+  });
+});
+
+router.get('/edit/:id', (request, response) => {
+  console.log(request.params);
+  Learner.findById(request.params.id, (error, learner) =>{
+    if(error)  response.send(error);
+    response.render("learners/edit", {learner});
+  });
+});
+
 module.exports = router;

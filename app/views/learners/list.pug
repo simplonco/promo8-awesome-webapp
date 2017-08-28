@@ -3,4 +3,6 @@ block content
   a(href="/add") ajouter un apprenant
   ul
     each learner in learners
-      li #{ learner.firstName } #{ learner.lastName }
+      li #{ learner.firstName } #{ learner.lastName } 
+        a(href=`/edit/${learner.id}`) EDIT 
+      
