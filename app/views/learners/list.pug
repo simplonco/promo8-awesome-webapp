@@ -1,0 +1,6 @@
+extends ../layout
+block content
+  a(href="/add") ajouter un apprenant
+  ul
+    each learner in learners
+      li #{ learner.firstName } #{ learner.lastName }
