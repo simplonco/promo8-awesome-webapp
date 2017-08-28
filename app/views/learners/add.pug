@@ -1,0 +1,6 @@
+extends ../layout
+block content
+  form(action = "/add", method = "POST")
+    input(type = "text", name = "firstName", placeholder = "put your firstName")
+    input(type = "text", name = "lastName", placeholder = "put your lastName")
+    button(type = "submit") add
