@@ -29,11 +29,18 @@ router.post('/edit/:id', (request, response) => {
   });
 });
 
+router.get('/remove/:id', (request, response) => {
+  Learner.findByIdAndRemove(request.params.id, (error) => {
+    if(error) response.send(error);
+    response.redirect('/list');
+  });
+});
+
 router.get('/edit/:id', (request, response) => {
   console.log(request.params);
   Learner.findById(request.params.id, (error, learner) =>{
     if(error)  response.send(error);
-    response.render("learners/edit", {learner});
+    response.render("learners/edit", { learner });
   });
 });
 

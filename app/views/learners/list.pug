@@ -5,4 +5,5 @@ block content
     each learner in learners
       li #{ learner.firstName } #{ learner.lastName } 
         a(href=`/edit/${learner.id}`) EDIT 
+        a(href=`/remove/${learner.id}`) REMOVE 
       
