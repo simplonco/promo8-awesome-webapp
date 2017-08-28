@@ -1,0 +1,19 @@
+{
+  "name": "promo8-awesome-webapp",
+  "version": "0.1.0",
+  "description": "Manage your learners",
+  "main": "app/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplonco/promo8-awesome-webapp.git"
+  },
+  "author": "Montreuil Promo8",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simplonco/promo8-awesome-webapp/issues"
+  },
+  "homepage": "https://github.com/simplonco/promo8-awesome-webapp#readme"
+}
