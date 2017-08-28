@@ -4,6 +4,7 @@
   "description": "Manage your learners",
   "main": "app/server.js",
   "scripts": {
+    "start": "nodemon app/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/simplonco/promo8-awesome-webapp/issues"
   },
-  "homepage": "https://github.com/simplonco/promo8-awesome-webapp#readme"
+  "homepage": "https://github.com/simplonco/promo8-awesome-webapp#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
